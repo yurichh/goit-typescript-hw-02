@@ -13,13 +13,13 @@ enum DaysOfWeek {
   Sunday,
 }
 
-function isWorkingToday(day: DaysOfWeek): boolean {
+function isWeekend(day: DaysOfWeek): boolean {
   switch (day) {
     case DaysOfWeek.Saturday:
     case DaysOfWeek.Sunday:
-      return false;
+      return true;
 
     default:
-      return true;
+      return false;
   }
 }
